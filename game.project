@@ -1,20 +1,24 @@
 [project]
-title = My project
+title = Shooter demo
 version = 0.1
 
 [bootstrap]
 main_collection = /main/main.collectionc
+render = /main/shooter.renderc
 
 [input]
 game_binding = /input/game.input_bindingc
 
 [display]
-width = 1280
-height = 720
+width = 400
+height = 900
 
 [physics]
 scale = 0.02
 
 [script]
 shared_state = 1
+
+[sprite]
+subpixels = 1
 
