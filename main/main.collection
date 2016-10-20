@@ -3,8 +3,8 @@ instances {
   id: "player"
   prototype: "/main/player.go"
   position {
-    x: 212.36758
-    y: 168.91054
+    x: 200.0
+    y: 170.0
     z: 0.0
   }
   rotation {
@@ -21,10 +21,10 @@ instances {
 }
 scale_along_z: 0
 embedded_instances {
-  id: "grid"
+  id: "enemycontroller"
   data: "components {\n"
   "  id: \"script\"\n"
-  "  component: \"/main/grid.script\"\n"
+  "  component: \"/main/enemycontroller.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -38,10 +38,9 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"model\"\n"
-  "  type: \"model\"\n"
-  "  data: \"mesh: \\\"/main/quad.dae\\\"\\n"
-  "material: \\\"/main/grid.material\\\"\\n"
+  "  id: \"enemyfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/enemy.go\\\"\\n"
   "\"\n"
   "  position {\n"
   "    x: 0.0\n"
@@ -59,7 +58,7 @@ embedded_instances {
   position {
     x: 200.0
     y: 450.0
-    z: 0.0
+    z: -0.5
   }
   rotation {
     x: 0.0
@@ -68,8 +67,149 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 600.0
-    y: 600.0
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "grid"
+  data: "components {\n"
+  "  id: \"script\"\n"
+  "  component: \"/render/grid.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"model\"\n"
+  "  type: \"model\"\n"
+  "  data: \"mesh: \\\"/main/quad.dae\\\"\\n"
+  "material: \\\"/render/grid.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 200.0
+    y: 450.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 500.0
+    y: 500.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "stars"
+  data: "components {\n"
+  "  id: \"script\"\n"
+  "  component: \"/render/stars.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"model\"\n"
+  "  type: \"model\"\n"
+  "  data: \"mesh: \\\"/main/quad.dae\\\"\\n"
+  "material: \\\"/render/stars.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 200.0
+    y: 450.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 450.0
+    y: 450.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "ui"
+  data: "components {\n"
+  "  id: \"gui\"\n"
+  "  component: \"/main/cover.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 422.85706
+    y: 450.0
+    z: -0.5
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
     z: 1.0
   }
 }

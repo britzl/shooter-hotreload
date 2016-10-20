@@ -7,6 +7,12 @@ images {
 images {
   image: "/main/images/player.png"
 }
+images {
+  image: "/main/images/defold-pattern.png"
+}
+images {
+  image: "/main/images/enemy01.png"
+}
 animations {
   id: "star"
   images {
@@ -24,5 +30,5 @@ animations {
   flip_vertical: 0
 }
 margin: 0
-extrude_borders: 0
+extrude_borders: 2
 inner_padding: 0

@@ -1,7 +1,7 @@
 name: "grid"
-tags: "tile"
-vertex_program: "/main/grid.vp"
-fragment_program: "/main/grid.fp"
+tags: "grid"
+vertex_program: "/render/grid.vp"
+fragment_program: "/render/grid.fp"
 vertex_constants {
   name: "view_proj"
   type: CONSTANT_TYPE_VIEWPROJ

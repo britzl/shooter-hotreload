@@ -35,5 +35,5 @@ void main()
 	float size = 6.0;
 	vec3 voronoi = sampleVoronoi(var_texcoord0, size);
 	float t = exp(-1.0 * size * voronoi.x) * voronoi.y;
-	gl_FragColor = vec4(voronoi.xy, 1.0, t * 10.0);
+	gl_FragColor = vec4(voronoi.x / 2.0, 0.2, voronoi.z * t * 100.0, t * 10.0);
 }

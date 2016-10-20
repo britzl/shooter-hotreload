@@ -305,7 +305,7 @@ emitters {
     key: EMITTER_KEY_PARTICLE_SIZE
     points {
       x: 0.0
-      y: 100.0
+      y: 60.0
       t_x: 1.0
       t_y: 0.0
     }
@@ -507,7 +507,7 @@ emitters {
       t_x: 1.0
       t_y: 0.0
     }
-    spread: 0.0
+    spread: 0.1
   }
   properties {
     key: EMITTER_KEY_PARTICLE_SPEED
