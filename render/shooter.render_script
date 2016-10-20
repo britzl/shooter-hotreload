@@ -31,7 +31,7 @@ function update(self)
 
     render.set_projection(vmath.matrix4_orthographic(0, render.get_width(), 0, render.get_height(), -1, 1))
 
-	render.draw(self.grid_pred)
+--	render.draw(self.grid_pred)
     render.draw(self.tile_pred)
     render.draw(self.particle_pred)
 	render.draw(self.stars_pred)

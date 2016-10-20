@@ -18,7 +18,7 @@ local function build_waves()
 					p3 = vmath.vector3(200, -100, 0) }
 	crv0 = pre_calc(crv0)
 	local crv1 =  { p0 = vmath.vector3(400, -100, 0),
-					p1 = vmath.vector3(400, 950, 0),      --
+					p1 = vmath.vector3(400, 650, 0),      --
 					p2 = vmath.vector3(0, 850, 0),
 					p3 = vmath.vector3(100, -100, 0) }
 	crv1 = pre_calc(crv1)
@@ -70,6 +70,7 @@ local function unspawn_waves(waves)
 			for i, s in pairs(w.spawn) do
 				if s.id then
 					go.delete(s.id)
+					s.id = nil
 				end
 			end
 		end

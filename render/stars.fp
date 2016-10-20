@@ -1,7 +1,7 @@
 #define iterations 17
 #define formuparam 0.53
 
-#define volsteps 10
+#define volsteps 2
 #define stepsize 0.15
 
 #define zoom   0.800
