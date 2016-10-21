@@ -1,7 +1,7 @@
 bez = require("main.bezier")
 
 local down = vmath.vector3(0, -1, 0)
-local offscreen = vmath.vector3(100, 100, 0)
+local offscreen = vmath.vector3(-100, -100, 0)
 
 -- pre-calc derivative terms
 local function pre_calc(w)
