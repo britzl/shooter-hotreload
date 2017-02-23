@@ -215,6 +215,7 @@ emitters {
       t_y: 0.0
     }
   }
+  size_mode: SIZE_MODE_MANUAL
 }
 emitters {
   id: "flash"
@@ -433,6 +434,7 @@ emitters {
       t_y: 0.0
     }
   }
+  size_mode: SIZE_MODE_MANUAL
 }
 emitters {
   id: "stars"
@@ -657,4 +659,5 @@ emitters {
       t_y: 0.0
     }
   }
+  size_mode: SIZE_MODE_MANUAL
 }
